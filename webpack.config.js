@@ -2,15 +2,13 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const deps = require("./package.json").dependencies;
 
-module.exports = (_, argv) => {
+module.exports = (argv) => {
 
-  const isDevelopment = argv.mode == "development";
-
-  console.log(isDevelopment);
+  const isDevelopment = argv.production;
 
   return {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3006/" : "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" ,
+      publicPath: isDevelopment ? "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" : "http://localhost:3006/",
     },
   
     resolve: {
