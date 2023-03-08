@@ -4,11 +4,11 @@ const deps = require("./package.json").dependencies;
 
 module.exports = (argv) => {
 
-  const isDevelopment = argv.production;
+  const isProduction = argv.production;
 
   return {
     output: {
-      publicPath: isDevelopment ? "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" : "http://localhost:3006/",
+      publicPath: isProduction ? "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" : "http://localhost:3006/",
     },
   
     resolve: {
