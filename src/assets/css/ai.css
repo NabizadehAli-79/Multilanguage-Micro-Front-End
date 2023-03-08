@@ -1,0 +1,107 @@
+@import "./font.css";
+
+.selectYourCarpetByClick {
+    background: linear-gradient(8deg, #080815, #10102c);
+    padding: 7rem;
+}
+
+@media (max-width: 768px) {
+    .selectYourCarpetByClick {
+        padding: 5rem;
+    }
+}
+
+.bySomeClickImgHolder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%;
+}
+
+.bySomeClickImgHolder img {
+    width: 80%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.selectYourCarpetByClickTxt {
+    padding: 0 3rem 0 3rem;
+}
+
+@media (max-width: 992px) {
+    .bySomeClickImgHolder img {
+        width: 100%;
+    }
+
+    .selectYourCarpetByClickTxt {
+        padding: 0 1rem;
+    }
+}
+/* .bySomeClickImgHolder::before {
+    width: 50%;
+    height: 100%;
+    background-color: #D7C500;
+    position: absolute;
+    top: -10%;
+    left: 60%;
+    content: "";
+    display: block;
+    z-index: -1;
+} */
+
+.bySomeClick {
+    font-family: MicroAi;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 204.4%;
+}
+
+.bySomeClickPara {
+    font-family: MicroAi;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 204.4%;
+}
+
+@media (max-width: 992px) {
+    .bySomeClick {
+        font-size: 16px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .bySomeClickPara {
+        font-size: 12px;
+    }
+}
+
+.byYourChoiceBtn  {
+    background: #716e9c;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.byYourChoiceBtn:hover {
+    background: #58567a;
+}
+
+@media (max-width: 992px) {
+    .byYourChoiceBtn {
+        width: 100%;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        background: #716e9c;
+    }
+}
+
+
+.btn-byYourChoiceBtn {
+    background-color: #716e9c;
+    padding: 10px 35px;
+    color: #fff;
+}
