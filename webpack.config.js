@@ -6,6 +6,8 @@ module.exports = (_, argv) => {
 
   const isDevelopment = argv.mode == "development";
 
+  console.log(isDevelopment);
+
   return {
     output: {
       publicPath: isDevelopment ? "http://localhost:3006/" : "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" ,
