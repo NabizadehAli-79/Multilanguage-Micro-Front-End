@@ -8,7 +8,7 @@ module.exports = (_, argv) => {
 
   return {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3006/" : "https://multilanguage-micro-front-end-ai-alinabizadeh79-yahoocom.vercel.app/" ,
+      publicPath: isDevelopment ? "http://localhost:3006/" : "https://multilanguage-micro-front-end-ai-vds6.vercel.app/" ,
     },
   
     resolve: {
