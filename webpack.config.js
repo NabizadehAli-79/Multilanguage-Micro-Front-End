@@ -5,16 +5,6 @@ const deps = require("./package.json").dependencies;
 
 module.exports = (_, argv) => {
 
-  const domainHandler = (port, domain) => {
-    const path = isDevelopment
-      ?
-        `@http://localhost:${port}/remoteEntry.js`
-      :
-        domain;
-
-    return path;
-  }
-
   return {
     output: {
       publicPath: isDevelopment ? "http://localhost:3002/" : "",
