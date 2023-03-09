@@ -1,0 +1,189 @@
+@import "./font.css";
+
+* {
+    direction: rtl;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.simplicity {
+    position: relative;
+}
+
+.simplicityTitle {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: #fff;
+    z-index: 1;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.simplicityTxt {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 204.4%;
+}
+
+.simplicityNav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138.9%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.simplicityPic {
+    position: relative;
+}
+
+.skyAndSea {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    background-color: #fff;
+    width: 74%;
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .skyAndSea {
+        top: unset;
+        bottom: -1px;
+        left: unset;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .simplicityTxt {
+        font-size: 15px;
+    }
+}
+
+.skyAndSeaPic {
+    margin-right: 1rem;
+}
+
+@media (max-width: 992px) {
+
+    .skyAndSeaPic {
+        margin-right: 0;
+    }
+
+
+    .skyAndSeaPic img {
+        width: 100%;
+    }
+
+    .simplicityTxt {
+        font-size: 22px;
+    }
+
+    .category {
+        padding: 2rem 0rem !important;
+    }
+
+    .noContainer {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .simplicityTxt {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.customContainer {
+    padding-right: 10rem;
+}
+
+@media (max-width: 992px) {
+    .customContainer {
+        padding-right: 0;
+        padding-left: 0;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 992px) {
+    .simplicityTitle {
+        top: unset;
+        bottom: -15%;
+        left: 10px;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    .skyAndSea {
+        left: unset;
+        right: 10px;
+    }
+}
+
+.contactInfo_HomePage {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 204.4%;
+
+    border: 1px solid #D0D0D0;
+    border-right: transparent;
+}
+
+@media (max-width: 992px) {
+    .contactInfo_HomePage {
+        border: 1px solid #D0D0D0;
+    }
+
+    .numberContact,
+    .timeContact,
+    .address {
+        display: block;
+    }
+
+}
+
+.beyondMind {
+    margin-top: -1px;
+    background: linear-gradient(8deg, #080815, #10102c);
+    padding: 3rem 0;
+}
+
+@media (max-width: 992px) {
+    .beyondMind {
+        padding-bottom: 0;
+    }
+}
+
+.beyondMind h2 {
+    font-family: MicroAi;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 204.4%;
+}
+
+.navTitle-left {
+    text-align: left;
+}
+
+.navTitle-right {
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .navTitle { 
+        text-align: center;
+    }
+}
