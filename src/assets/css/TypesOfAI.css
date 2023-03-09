@@ -1,0 +1,240 @@
+@import "./font.css";
+
+* {
+    direction: rtl;
+}
+
+.linkAiArticle {
+    display: block;
+    font-weight: MicroAi;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    padding: 0 1rem 1rem 1rem;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 204.4%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .callToActionsBg {
+        background-color: #1E1E1C;
+        padding: 1.5rem 1rem;
+    }
+}
+
+.desktopNone {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .desktopNone {
+        display: block;
+    }
+}
+
+.callToActionOne {
+    padding-top: 106.49%;
+}
+
+.callToActionOne::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.14);
+}
+
+.callToActionTwo {
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .callToActionTwo {
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+.callToActionTwoImgHolder {
+    padding-top: 48.34%;
+    height: 50%;
+}
+
+@media (max-width: 992px) {
+    .callToActionTwoImgHolder {
+        height: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.callToActionOne img, .callToActionTwoImgHolder img, .callToActionDoubleApple img, .callToActionGreenGarden img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.callToActionOne a {
+    top: 88%;
+}
+
+.callToActionTwoImgHolder a, .callToActionDoubleApple a, .callToActionGreenGarden a {
+    top: 75%;
+}
+
+@media (max-width: 992px) {
+    .callToActionOne a, .callToActionTwoImgHolder a, .callToActionDoubleApple a, .callToActionGreenGarden a {
+        font-size: 14px;
+    }
+
+    .callToActionDoubleApple a, .callToActionGreenGarden a  {
+        top: 90%;
+    }
+}
+
+.callToActionTwoImgHolder::after, .callToActionDoubleApple::after, .callToActionGreenGarden::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
+.callToActionTwoImgHolder::after:hover, .callToActionDoubleApple::after:hover, .callToActionGreenGarden::after:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.callToActionTwoTxt {
+    background: #1E1E1C;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .callToActionTwoTxt {
+        justify-content: flex-start;
+        margin: 1rem 0 2rem;
+    }
+}
+
+.meetSpecialAi {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 204.4%;
+    color: #Fff;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .meetSpecialAi {
+        font-size: 16px;
+        text-align: right;
+    }
+}
+
+.callToActionTwoDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .callToActionTwoDetails {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+}
+
+.meetSpecialAiPara {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 159.4%;
+    color: #D9D9D9;
+    width: 50%;
+    padding: 2rem;
+}
+
+@media (max-width: 992px) {
+    .meetSpecialAiPara {
+        padding: 0;
+        font-size: 12px;
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+.btn-specialAi {
+    background: #7912d1;
+    border: none;
+    color: #fff;
+    padding: 15px 66px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 138.9%;
+    transition: 0.3s;
+}
+
+
+.btn-specialAi:hover {
+    color: #fff !important;
+    background: #5e0da5;
+}
+
+@media (max-width: 992px) {
+    .btn-specialAi {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.callToActionThree {
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .callToActionThree {
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+.callToActionDoubleApple, .callToActionGreenGarden {
+    height: 50%;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .callToActionDoubleApple, .callToActionGreenGarden {
+        height: 100%;
+    }
+
+    .callToActionDoubleApple {
+        margin: 1rem 0;
+    }
+
+}
+
+.callToActionDoubleApple {
+    padding-top: 105.83%;
+}
+
+.callToActionGreenGarden {
+    padding-top: 105%;
+}
