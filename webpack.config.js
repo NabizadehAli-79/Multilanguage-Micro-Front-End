@@ -4,7 +4,6 @@ const deps = require("./package.json").dependencies;
 
 module.exports = () => {
   const isDevelopment = argv.mode == "development";
-
   return {
     output: {
       publicPath: isDevelopment ? "http://localhost:3005/" : "",
