@@ -1,0 +1,96 @@
+@import "./font.css";
+
+.bigBgGifs {
+    max-height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.bigBgGifs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.687);
+    z-index: 2;
+}
+
+.bigBgGifs .carousel-control-next, .bigBgGifs .carousel-control-prev, .bigBgGifs .carousel-indicators {
+  display: none !important;
+}
+
+.bigBgGifs_content {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.bigBgGifs_content--rtl {
+    right: 2rem;
+    left: unset;
+}
+
+.bigBgGifs_content--ltr {
+    right: unset;
+    left: 2rem;
+}
+
+@media (max-width: 900px) {
+    .bigBgGifs_content {
+        width: 70%;
+    }   
+}
+
+@media (max-width: 645px) {
+    .bigBgGifs_content {
+        width: 88%;
+        right: unset;
+        padding: 1rem;
+    }   
+}
+
+
+.picBgHeader {
+    font-family: MicroAi;
+    color: #fff;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 204.4%;
+    text-align: right;
+}
+
+.picBgPara {
+    font-family: MicroAi;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 184.9%;
+    text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .picBgHeader {
+        font-size: 30px;
+    }
+}
+@media (max-width: 645px) {
+    .picBgHeader {
+        font-size: 23px;
+    }   
+    .picBgPara {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+    .picBgHeader {
+        font-size: 16px;
+    }   
+    .picBgPara {
+        font-size: 10px;
+    }
+}

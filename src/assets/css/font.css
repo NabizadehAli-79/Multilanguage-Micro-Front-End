@@ -1,0 +1,45 @@
+@font-face {
+    font-family: MicroAi;
+    font-style: normal;
+    font-weight: 200;
+    src: url('./../fonts/Anjoman-FaNum-ExtraLight.eot');
+    src: url('./../fonts/Anjoman-FaNum-ExtraLight.eot?#iefix') format("embedded-opentype"),
+    url('./../fonts/Anjoman-FaNum-ExtraLight.woff2') format("woff2"),
+    url('./../fonts/Anjoman-FaNum-ExtraLight.woff') format("woff")
+}
+@font-face {
+    font-family: MicroAi;
+    font-style: normal;
+    font-weight: normal;
+    src: url('./../fonts/Anjoman-FaNum-Regular.eot');
+    src: url('./../fonts/Anjoman-FaNum-Regular.eot?#iefix') format("embedded-opentype"),
+    url('./../fonts/Anjoman-FaNum-Regular.woff2') format("woff2"),
+    url('./../fonts/Anjoman-FaNum-Regular.woff') format("woff")
+}
+@font-face {
+    font-family: MicroAi;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./../fonts/Anjoman-FaNum-Regular.eot');
+    src: url('./../fonts/Anjoman-FaNum-Regular.eot?#iefix') format("embedded-opentype"),
+    url('./../fonts/Anjoman-FaNum-Regular.woff2') format("woff2"),
+    url('./../fonts/Anjoman-FaNum-Regular.woff') format("woff")
+}
+@font-face {
+    font-family: MicroAi;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./../fonts/Anjoman-FaNum-Bold.eot');
+    src: url('./../fonts/Anjoman-FaNum-Bold.eot?#iefix') format("embedded-opentype"),
+    url('./../fonts/Anjoman-FaNum-Bold.woff2') format("woff2"),
+    url('./../fonts/Anjoman-FaNum-Bold.woff') format("woff")
+}
+@font-face {
+    font-family: MicroAi;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./../fonts/Anjoman-FaNum-Heavy.eot');
+    src: url('./../fonts/Anjoman-FaNum-Heavy.eot?#iefix') format("embedded-opentype"),
+    url('./../fonts/Anjoman-FaNum-Heavy.woff2') format("woff2"),
+    url('./../fonts/Anjoman-FaNum-Heavy.woff') format("woff")
+}
