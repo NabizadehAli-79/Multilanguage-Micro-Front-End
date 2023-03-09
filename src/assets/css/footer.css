@@ -1,0 +1,43 @@
+@import "./font.css";
+
+footer span, footer p {
+    font-family: MicroAi;
+    line-height: 30px;
+}
+
+.techs {
+    font-style: italic;
+    margin: 0 0.35rem;
+}
+
+.borderLeft {
+    border-left: 3px solid #cccaff;
+    padding-left: 1rem;
+}
+
+.borderRight {
+    border-right: 3px solid #cccaff;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .meSection {
+        text-align: center !important;
+        padding: 1rem;
+        border: 5px solid #cccaff;
+        margin-top: 3rem;
+    }
+
+    .socialMediaHolder {
+        justify-content: center !important;
+    }
+}
+
+.socialMedia {
+    width: 30px;
+}
+
+.socialMedia img {
+    width: 100%;
+}
