@@ -5,7 +5,7 @@ To whom it may concern,
 I'd like to inform you that it is a pleasure to develop and help others to make Micro Front End culture much vaster.
 
 "An architectural style where independently deliverable frontend applications are composed into a greater whole" is a definition of Micro Front End. In a simpler way of telling, each section of your website is an independent application.
-I have used three languages including English, German, and Persian by i18next technology to parse languages through all applications. Also all the applications are dockerized to be used in an easier way.
+I have used three languages including English, German, and Persian by i18next technology to parse languages through all applications. Also all the applications are dockerized to be used in an easier way. Make sure you are proficient in Webpack to develop this project.
 
 Some points you have to know before using project:
 - Each application has its own branch. (Although it's good for development, but if you wanted to do the project in production mode, each application should have their own repository! Not branch.)
