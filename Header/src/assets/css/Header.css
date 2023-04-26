@@ -1,0 +1,173 @@
+@import "./font.css";
+
+.imgHeaderHolder {
+  color: #fff;
+  position: relative;
+  height: fit-content;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .imgHeaderHolder {
+    padding: 13rem;
+  }
+}
+
+.imgHeaderHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .imgHeaderHolder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.imgHeaderHolder::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: translate( 40% , -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.461);
+  z-index: 2;
+}
+
+.headerHomePageTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  color: #cccaff;
+  animation: mymove 1s;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+    color: #cccaff4c;
+  }
+  to {
+    left: 50%;
+    color: #cccaff;
+  }
+}
+
+@media (max-width: 365px) {
+  .headerHomePageTitle {
+    left: 43%;
+  }
+
+  @keyframes mymove {
+    from {
+      left: 0px;
+      color: #cccaff4c;
+    }
+    to {
+      left: 43%;
+      color: #cccaff;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .headerHomePageTitle {
+    left: 35%;
+  }
+
+  @keyframes mymove {
+    from {
+      left: 0px;
+      color: #cccaff4c;
+    }
+    to {
+      left: 35%;
+      color: #cccaff;
+    }
+  }
+}
+
+
+.headerHomePage {
+  font-family: MicroAi;
+  font-weight: 800;
+  font-size: 3.90625vw;
+  line-height: 138.9%;
+}
+
+@media (max-width: 992px) {
+  .headerHomePage {
+      font-size: 6.90625vw;
+  }
+}
+
+.occupationHomePage {
+  font-weight: 500;
+  font-size:  18px;
+  line-height: 138.9%;
+}
+
+@media (max-width: 992px) {
+  .occupationHomePage {
+      font-size: 12px;
+  }
+
+  .imgHeaderHolder_before {
+      background: rgb(0 0 0 / 40%);;
+  }
+
+  .occupationHomePage {
+      font-size: 9px;
+  }
+}
+
+.langIcon {
+  display: block;
+  position: absolute;
+  z-index: 4;
+  left: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.languageList {
+  background-color: #827ad8;
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  z-index: 4;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.langIcon:hover + .languageList, .languageList:hover.languageList {
+  display: flex;
+  transition: 0.5s;
+}
+
+.langListItems {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.activeLang {
+  background-color: #c3b3f6;
+}
+
+.pointer {
+  cursor: pointer;
+}
