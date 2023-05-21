@@ -2,24 +2,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const deps = require("./package.json").dependencies;
 
-module.exports = (_, argv) => {
-
-  const isDevelopment = argv.mode == "development";
-
-  const domainHandler = (appname, port, domain) => {
-    const path = isDevelopment
-      ?
-        `${appname}@http://localhost:${port}/remoteEntry.js`
-      :
-        domain;
-
-    return path;
-  }
-
-
-  return {
+module.exports = {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3007/" : "",
+      publicPath: "http://localhost:3010/",
     },
   
     resolve: {
@@ -31,7 +16,6 @@ module.exports = (_, argv) => {
       historyApiFallback: true,
     },
   
-    module: {
       rules: [
         {
           test: /\.m?js/,
@@ -64,20 +48,20 @@ module.exports = (_, argv) => {
           },
         },
       ],
-    },
   
     plugins: [
       new ModuleFederationPlugin({
         name: "AppHolder",
         filename: "remoteEntry.js",
         remotes: {
-          NavigateSection: domainHandler("NavigateSection", "3004", ""),
-          TypesOfAi: domainHandler("TypesOfAI", "3002", ""), 
-          header: domainHandler("Header", "3000", ""), 
-          Slider: domainHandler("Slider", "3003", ""), 
-          footer: domainHandler("Footer", "3012", ""), 
-          BigBg: domainHandler("BigBg", "3005", ""), 
-          AI: domainHandler("Ai", "3006", ""), 
+          header: "Header@http://localhost:3000/remoteEntry.js", 
+          NavigateSection: "NavigateSection@http://localhost:3004/remoteEntry.js", 
+          TypesOfAi: "TypesOfAI@http://localhost:3002/remoteEntry.js", 
+          Slider: "Slider@http://localhost:3003/remoteEntry.js", 
+          header: "Header@http://localhost:3000/remoteEntry.js", 
+          footer: "Footer@http://localhost:3012/remoteEntry.js", 
+          BigBg: "BigBg@http://localhost:3005/remoteEntry.js", 
+          AI: "Ai@http://localhost:3006/remoteEntry.js", 
         },
         exposes: {},
         shared: {
@@ -97,6 +81,5 @@ module.exports = (_, argv) => {
       }),
     ],
   };
-} 
 
 

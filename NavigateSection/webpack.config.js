@@ -3,13 +3,10 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 
 
-module.exports = (_, argv) => {
+module.exports = {
 
-  const isDevelopment = argv.mode == "development";
-
-  return {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3004/" : "",
+      publicPath: "http://localhost:3004/",
     },
   
     resolve: {
@@ -76,7 +73,6 @@ module.exports = (_, argv) => {
         template: "./src/index.html",
       }),
     ],
-  };
 }
 
 

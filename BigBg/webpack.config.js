@@ -2,11 +2,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const deps = require("./package.json").dependencies;
 
-module.exports = () => {
-  const isDevelopment = argv.mode == "development";
-  return {
+module.exports = {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3005/" : "",
+      publicPath: "http://localhost:3005/",
     },
   
     resolve: {
@@ -73,7 +71,6 @@ module.exports = () => {
         template: "./src/index.html",
       }),
     ],
-  };
 } 
 
 

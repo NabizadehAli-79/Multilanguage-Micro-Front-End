@@ -3,21 +3,9 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 
 
-module.exports = (_, argv) => {
-
-  const domainHandler = (port, domain) => {
-    const path = isDevelopment
-      ?
-        `@http://localhost:${port}/remoteEntry.js`
-      :
-        domain;
-
-    return path;
-  }
-
-  return {
+module.exports = {
     output: {
-      publicPath: isDevelopment ? "http://localhost:3002/" : "",
+      publicPath: "http://localhost:3002/",
     },
   
     resolve: {
@@ -84,7 +72,6 @@ module.exports = (_, argv) => {
         template: "./src/index.html",
       }),
     ],
-  };
 }
 
 
